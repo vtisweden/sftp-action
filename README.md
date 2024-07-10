@@ -1,4 +1,4 @@
-## Currently, not active maintained, but working!
+## 2024-07: Fixed version for Node.js 20!
 
 # sftp-action
 This action can (currently only) upload files and directories over sftp with ssh login.
@@ -52,7 +52,7 @@ jobs:
       uses: actions/checkout@v2.3.4
     - name: Upload Files
       id: upload
-      uses: Creepios/sftp-action@v1.0.3
+      uses: vtisweden/sftp-action@v1.0.6
       with:
         host: '127.0.0.1'
         port: 22
