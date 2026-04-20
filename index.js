@@ -16,7 +16,7 @@ const passphrase = core.getInput('passphrase');
 var privateKey = core.getInput('privateKey');
 
 core.setSecret(password);
-if (passphrase != undefined) {
+if (passphrase) {
     core.setSecret(passphrase);
 }
 
